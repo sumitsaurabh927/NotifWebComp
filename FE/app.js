@@ -9,7 +9,7 @@ const input = document.querySelector('.input')
 
 form.addEventListener("submit", async (e) => {
     e.preventDefault();
-    await fetch('http://localhost:3000/home', {
+    await fetch('https://notificationsgeneratorbackend.onrender.com/home', {
         method: 'POST',
         body: JSON.stringify({
             description: input.value,
