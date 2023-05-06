@@ -12,28 +12,21 @@
 </head>
 
 <body>
-
+    
     <notification-center-component
-      style="display: inline-flex"
-      application-identifier="SWMw97ec1ZNA"
-      subscriber-id="SUMIT"
+    style="display: inline-flex"
+    application-identifier="SWMw97ec1ZNA"
+    subscriber-id="Sumit"
     ></notification-center-component>
-
-
-<form action="" method="post">
-    <input type="text" placeholder="Enter notification text">
-    <button id="btn">Send</button>
-
-</form>
-
-    <script>
-        // here you can attach any callbacks, interact with the web component API
-        let nc = document.getElementsByTagName('notification-center-component')[0];
-        nc.onLoad = () => console.log('hello world!');
-        // extracting send button
-        let btn = document.getElementById('btn');
-        btn.onclick = () => console.log('clicked');
-      </script>
+    
+    
+    <form id="form" action="#" method="post">
+        <input class="input" type="text" placeholder="Enter notification text" name="description">
+        <button id="btn">Send</button>
+    </form>
+    
+    
+    <script src="./app.js"></script>
 </body>
 
 </html>
